@@ -13,12 +13,11 @@ class Solution(object):
                 maximum = x
                 mini = max(prices)
             elif x < mini and x >= 0:
-                mini = x               
+                mini = x  
+                profit = max(profit, maximum - mini)
             i-=1
-            profit = max(profit, maximum - mini)
         if profit > 0:
             return profit
-        else:
-            return 0
+        return 0
         
         
