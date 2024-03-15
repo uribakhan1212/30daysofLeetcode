@@ -6,10 +6,10 @@ class Solution(object):
         """
         if num == 1:
             return True
-        elif num > (2**31)-1 or num < 1:
+        if num > (2**31)-1 or num < 1:
             return False
         if num > 2**15:
-            length = (num//150)
+            length = (num//155)
         else:
             length = num//2
   
