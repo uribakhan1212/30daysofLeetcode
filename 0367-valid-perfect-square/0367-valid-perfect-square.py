@@ -12,7 +12,7 @@ class Solution(object):
         if num > 2**15:
             length = (num//150)
         
-        for i in range(2, length+1):
+        for i in range(num//length, length+1):
             if i*i == num:
                 return True
         return False
