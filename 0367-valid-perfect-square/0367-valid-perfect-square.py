@@ -10,7 +10,7 @@ class Solution(object):
             return False
         length = num//2
         if num > 2**16:
-            length = (num//100)
+            length = (num//150)
         
         for i in range(2, length+1):
             if i*i == num:
