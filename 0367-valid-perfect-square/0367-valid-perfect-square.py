@@ -13,10 +13,9 @@ class Solution(object):
         else:
             length = num//2
   
-        
         for i in range(num//length, length+1):
             if i*i == num:
                 return True
-            if i*i > num:
+            elif i*i > num:
                 return False
         return False
