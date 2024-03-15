@@ -8,14 +8,7 @@ class Solution(object):
             return True
         if num > (2**31)-1:
             return False
-        if num > 2**15:
-            length = (num//254)
-        else:
-            length = num//2
-  
-        for i in range(num//length, length+1):
-            if i*i == num:
-                return True
-            elif i*i > num:
-                return False
-        return False
+        
+        root = int(num**0.5)
+        
+        return root*root == num
