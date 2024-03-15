@@ -9,7 +9,7 @@ class Solution(object):
         if num > (2**31)-1 or num < 1:
             return False
         if num > 2**15:
-            length = (num//155)
+            length = (num//160)
         else:
             length = num//2
   
