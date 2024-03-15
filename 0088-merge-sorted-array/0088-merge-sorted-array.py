@@ -7,7 +7,6 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        # m = max(0, m)
-        # n = min(len(nums2), 200)
+        
         nums1[m:] = nums2
         nums1.sort()
