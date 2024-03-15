@@ -10,6 +10,6 @@ class Solution(object):
         m = max(0, m)
         n = min(len(nums2), 200)
         length = min(200, m+n)
-        if len(nums1) == m+n:
-            nums1[m:] = nums2
-            nums1.sort()
+        # if len(nums1) == m+n:
+        nums1[m:] = nums2
+        nums1.sort()
